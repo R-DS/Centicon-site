@@ -1,0 +1,187 @@
+/*color
+#1c2834
+*/
+
+
+
+/* navbar cs start*/
+.navbar-toggler{
+    background-color: #d4af37;
+}
+.navbar-toggler:hover{
+    color: #d4af37;
+}
+
+
+.navbar-brand{
+    font-family: Montserrat-Thin, serif;
+    color: #d4af37 !important;
+    font-size: x-large;
+}
+.navbar{
+    background-color: #1c2834 !important;
+}
+.navbar-nav li a{
+    color: #d4af37 !important;
+    font-family: Montserrat-Thin, serif;
+    font-size: larger;
+}
+
+.navbar-nav li a:hover{
+    background-color: #d4af37;
+    color: black !important;
+    font-family: Montserrat-Thin, serif;
+    font-weight: bolder;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.autohide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+/*nav bar css ends*/
+
+h1{
+    font-family: "Montserrat-Thin", serif;
+}
+
+p {
+    font-family: 'Montserrat, sans-serif', serif;  font-size: 0.9rem;  line-height: 1.8;
+    font-weight: 400;}
+
+.cnt-block {
+    height: 39px;
+}
+
+.bg-info{
+    background-color: blueviolet;
+}
+
+
+#more {display: none;}
+
+
+/* Our Services */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.card{
+    background-color: inherit;
+    border: none;
+}
+
+
+
+/*Our services*/
+
+/*Card image size*/
+.card-img img{
+    height: 400px;
+    filter: brightness(40%);
+}
+
+.card h1{
+    font-family: Montserrat-Thin, serif;
+    font-size: 45px;
+    -webkit-text-stroke: 1.5px #d4af37;
+    color: white;
+}
+.card-img-overlay p{
+    font-family: Arial, monospace;
+    font-size: 17px;
+    color: white;
+    padding-top: 75px;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: #d4af37;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 5px solid #d4af37;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 50px;
+    color: red;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 50px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 30px;
+}
