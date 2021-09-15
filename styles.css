@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 /*color
 #1c2834
 */
@@ -136,7 +138,7 @@ p {
 
 
 
-.carousel-control-prev-icon,
+/*.carousel-control-prev-icon,
 .carousel-control-next-icon {
     height: 100px;
     width: 100px;
@@ -158,17 +160,73 @@ p {
     content: '<';
     font-size: 50px;
     color: red;
+}*/
+
+
+/* Testimonial */
+
+
+section{
+    margin-bottom: 10%;
+}
+
+
+#carouselFadeId .carousel-control-prev{
+    top: 110%;
+    left: 30%;
+}
+
+#carouselFadeId .carousel-control-next{
+    top: 110%;
+    right: 30%;
+    color: #d4af37 !important;
+}
+
+.testimonial-carousel-id{
+    color: wheat;
+    position: relative;
+    left: 50%;
+    padding-top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.testimonial-carousel-id h1,
+.testimonial-carousel-id h2{
+    animation: fadeInLeft 0.5s ease forwards;
+}
+.testimonial-carousel-id p{
+    animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 
 
-
-
-
-
-
-
-
+#carouselFadeId{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
 
 
 
