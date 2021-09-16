@@ -182,7 +182,7 @@ section{
     color: #d4af37 !important;
 }
 
-.testimonial-carousel-id{
+.testimonial-carousel-indicators{
     color: wheat;
     position: relative;
     left: 50%;
@@ -220,8 +220,6 @@ section{
     }
 }
 
-
-
 #carouselFadeId{
     width: 100%;
     height: 400px;
@@ -229,7 +227,100 @@ section{
 }
 
 
+/*Baabaqo*/
+.baabaqo .carousel-item{
+    min-height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
 
+.baabaqo .carousel-item:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.baabaqo .carousel-item h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 80px;
+    color: red !important;
+    opacity: 0;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.baabaqo .carousel-item p{
+    font-family: "Montserrat-Thin", serif;
+    font-size: 24px;
+    margin: 0;
+    color: greenyellow;
+    opacity: 0;
+    text-transform: uppercase;
+    left: 50% !important;
+    top: 50%;
+    text-align: center;
+}
+.baabaqo .carousel-item.active h2{
+    animation: fadeInLeft 0.5s ease forwards;
+}
+.baabaqo .carousel-item.active p{
+    animation: fadeInRight 0.5s ease forwards;
+}
+.baabaqo .carousel-controls{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    z-index: 10;
+    transform: translate(-50%);
+}
+.baabaqo .carousel-indicators{
+    position: relative;
+    margin: 0;
+}
+.baabaqo .carousel-indicators li{
+    width: 30px;
+    height: 5px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    border: solid 2px transparent;
+    transition: all 0.3s ease;
+}
+.baabaqo .carousel-control-next-icon,
+.baabaqo .carousel-control-prev-icon{
+    width: 30px;
+}
+.baabaqo .carousel-control-next{
+    right: -90px;
+}
+.baabaqo .carousel-control-prev{
+    left: -90px;
+}
+.baabaqo .carousel-indicators li.active{
+    border-color: #fff;;
+    transform: scale(1.2);
+}
+.baabaqo .carousel-control-next,
+.baabaqo .carousel-control-prev{
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.baabaqo .carousel-control-next:hover,
+.baabaqo .carousel-control-prev:hover{
+    box-shadow: 0 0 10px #ffffff;
+}
 
 
 
