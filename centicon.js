@@ -75,14 +75,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 /*Home and Contact animation*/
-window.sr = ScrollReveal();
+/*window.sr = ScrollReveal();
 sr.reveal('.Home', {duration: 3000, origin: 'top', distance: '40px'});
 sr.reveal('.contactleft', {
     duration: 2000, origin: 'left', distance: '300px'
 });
 sr.reveal('.contactright', {
     duration: 2000, origin: 'right', distance: '300px'
-});
+});*/
 
 
 /*Scrolling smooth animation*/
