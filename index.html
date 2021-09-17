@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navtogllercenti">
                 <ul class="navbar-nav ms-lg-auto text-center">
                     <li class="nav-item"><a class="nav-link" href="#homeid">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#AboutUsId">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#AboutUsId">About us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicesId">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact </a></li>
                 </ul>
@@ -284,34 +284,57 @@
 
 
     <!--Contact version2-->
+<!--
+    <form class="row g-3">
+        <div class="col-sm-4">
+            <label for="nameId" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameId" required>
+        </div>
+        <div class="col-sm-8">
+            <label for="emailId" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailId" required>
+        </div>
+
+        <div class="col-sm-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-lg btn-dark">Submit</button>
+        </div>
+    </form>-->
+
+
     <section class="contact2" id="contact">
         <h1 class="title">get in touch</h1>
         <div class="container">
-            <div class="contact-form row">
-                <div class="form-field col-lg-6">
-                    <input id="name" class="input-text" type="text" name="">
-                    <label for="name" class="label">name</label>
+            <form>
+                <div class="contact-form row">
+                    <div class="form-field col-lg-6">
+                        <input id="name" class="input-text" type="text" required>
+                        <label for="name" class="label">name</label>
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <input id="email" class="input-text" type="email" required>
+                        <label for="email" class="label">email</label>
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <input id="company" class="input-text" type="text" required>
+                        <label for="company" class="label">company name</label>
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <input id="phone" class="input-text" type="text" required>
+                        <label for="phone" class="label">contact number</label>
+                    </div>
+                    <div class="form-field-message col-lg-12">
+                        <label for="message2" class="label-contact-message">message</label>
+                        <textarea id="message2" class="input-text-message" type="text" rows="4"></textarea>
+                    </div>
+                    <div class="form-field col-lg-12" align="right">
+                        <input class="btn btn-primary submit-btn" type="submit" value="submit">
+                    </div>
                 </div>
-                <div class="form-field col-lg-6">
-                    <input id="email" class="input-text" type="email" name="">
-                    <label for="email" class="label">email</label>
-                </div>
-                <div class="form-field col-lg-6">
-                    <input id="company" class="input-text" type="text" name="">
-                    <label for="company" class="label">company name</label>
-                </div>
-                <div class="form-field col-lg-6">
-                    <input id="phone" class="input-text" type="text" name="">
-                    <label for="phone" class="label">contact number</label>
-                </div>
-                <div class="form-field col-lg-12">
-                    <input id="message2" class="input-text" type="text" name="">
-                    <label for="message2" class="label">message</label>
-                </div>
-                <div class="form-field col-lg-12" align="right">
-                    <input class="submit-btn" type="submit" value="submit">
-                </div>
-            </div>
+            </form>
         </div>
 
     </section>

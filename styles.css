@@ -25,14 +25,14 @@
 }
 .navbar-nav li a{
     color: #d4af37 !important;
-    font-family: Montserrat-Thin, serif;
+    font-family: 'Montserrat, sans-serif', serif;
     font-size: larger;
 }
 
 .navbar-nav li a:hover{
     background-color: #d4af37;
-    color: black !important;
-    font-family: Montserrat-Thin, serif;
+    color: #1c2834 !important;
+    font-family: 'Montserrat, sans-serif', serif;
     font-weight: bolder;
     transition: background-color 0.5s ease-in-out;
 }
@@ -382,9 +382,30 @@ section{
     text-transform: capitalize;
     transition: tranform 0.2s ease-in-out;
 }
+.contact-form .label-contact-message{
+    position: absolute;
+    font-size: 18px; line-height: 26px;
+    color: #d69600;
+    cursor: text;
+    text-transform: capitalize;
+}
+.contact-form .input-text-message{
+    width: 100%;
+    margin-top: 26px;
+    border-width: 0 0 2px 0;
+    border-color: #d69600;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.contact-form .input-text-message:focus{
+    outline-color: #d69600;
+    border-color: #d69600;
+}
 .contact2 .contact-form .submit-btn{
-    background-image: linear-gradient(125deg, #a72879, #064497);
-    color: #fff;
+    /*background-image: linear-gradient(90deg, #d69600, #ffdf7a);*/
+    background-image: linear-gradient(0.25turn,#d69600 , #ffdf7a, #d69600);
+    color: #1c2834;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
@@ -405,4 +426,6 @@ section{
 
 footer{
     padding: 30px;
+    background-color: #1c2834;
+    color: white;
 }
