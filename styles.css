@@ -4,9 +4,12 @@
 #1c2834
 */
 
-
+.maintxt {position: relative;}
+.maintxt > img, .overlay-text {position: center;}
 
 /* navbar cs start*/
+.navbar{
+}
 .navbar-toggler{
     background-color: #d4af37;
 }
