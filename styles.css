@@ -88,6 +88,12 @@ p {
     #servicesId .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
+    #servicesId .card-img img{
+        width: 100%;
+    }
+    #servicesId .card-img-overlay h1{
+        font-size: 38px;
+    }
 }
 
 #servicesId .carousel-inner .carousel-item.active,
@@ -127,7 +133,7 @@ p {
 /*Card image size*/
 .card-img img{
     height: 400px;
-    filter: brightness(40%);
+    filter: brightness(60%);
 }
 
 .card h1{
@@ -377,7 +383,7 @@ section{
 }
 .contact-form .label{
     position: absolute;
-    left: 20px; bottom: 11px;
+    left: 11px; bottom: 11px;
     font-size: 18px; line-height: 26px;
     font-weight: 400;
     color: #1c2834;
