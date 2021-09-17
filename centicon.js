@@ -1,4 +1,11 @@
 
+/*function closeMenu(){
+    document.querySelector('.navbar-collapse a').click(function(){
+        document.querySelector(".navbar-collapse").collapse('hide');
+    });
+}*/
+
+
 function myFunction() {
     const dots = document.getElementById("dots");
     const moreText = document.getElementById("more");
