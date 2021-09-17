@@ -178,9 +178,8 @@ p {
 
 /* Testimonial */
 
-/*
 
-section{
+/*section{
     margin-bottom: 10%;
 }
 
@@ -213,33 +212,11 @@ section{
     animation: fadeInRight 0.5s ease forwards;
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translate(-30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0px);
-    }
-}
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0px);
-    }
-}
-
 #carouselFadeId{
     width: 100%;
     height: 400px;
     object-fit: cover;
-}
-*/
+}*/
 
 
 /*Baabaqo*/
@@ -336,6 +313,27 @@ section{
 .baabaqo .carousel-control-next:hover,
 .baabaqo .carousel-control-prev:hover{
     box-shadow: 0 0 10px #ffffff;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 
