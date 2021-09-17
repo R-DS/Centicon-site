@@ -424,6 +424,9 @@ p {
 }
 
 @media screen and (max-width: 640px) {
+    .contact2 h1{
+        font-size: 30px !important;
+    }
     .contact2 .btn1{
         text-align: center !important;
     }
