@@ -4,9 +4,9 @@
 #1c2834
 */
 
-.maintxt {position: relative;}
-.maintxt > img, .overlay-text {position: center;}
-
+section{
+    margin-bottom: 60px;
+}
 /* navbar cs start*/
 .navbar{
 }
@@ -178,6 +178,7 @@ p {
 
 /* Testimonial */
 
+/*
 
 section{
     margin-bottom: 10%;
@@ -238,6 +239,7 @@ section{
     height: 400px;
     object-fit: cover;
 }
+*/
 
 
 /*Baabaqo*/
