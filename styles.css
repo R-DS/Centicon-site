@@ -399,8 +399,8 @@ section{
     font-weight: 400;
 }
 .contact-form .input-text-message:focus{
-    outline-color: #d69600;
-    border-color: #d69600;
+    outline-color: #d69600 !important;
+    border-color: #d69600 !important;
 }
 .contact2 .contact-form .submit-btn{
     /*background-image: linear-gradient(90deg, #d69600, #ffdf7a);*/

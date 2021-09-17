@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form-field{
+            position: relative;
+            margin-top:20px;
+        }
+        input:focus ~ label, input:not(:placeholder-shown) ~ label {
+            top:-16px;
+            font-size:12px;
+            background-color: white;
+        }
+        label {
+            position: absolute;
+            pointer-events: none;
+            left: 10px;
+            top: 2px;
+            transition: 0.2s ease all;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<section class="contact">
+    <div class="contact-form row">
+        <div class="form-field col-lg-6">
+            <input id="name" class="input-text" type="text" name="">
+            <label for="name" class="label">name</label>
+        </div>
+        <div class="form-field col-lg-6">
+            <input id="email" class="input-text" type="email" name="">
+            <label for="email" class="label">email</label>
+        </div>
+        <div class="form-field col-lg-6">
+            <input id="company" class="input-text" type="text" name="">
+            <label for="company" class="label">company name</label>
+        </div>
+        <div class="form-field col-lg-6">
+            <input id="phone" class="input-text" type="text" name="">
+            <label for="phone" class="label">contact number</label>
+        </div>
+        <div class="form-field col-lg-12">
+            <input id="message2" class="input-text" type="text" name="">
+            <label for="message2" class="label">message</label>
+        </div>
+        <div class="form-field col-lg-12" align="right">
+            <input class="submit-btn" type="submit" value="submit">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
