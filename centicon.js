@@ -100,9 +100,11 @@ $(function () {
 });
 
 
+$('input').on('focus', function() {
+    $(this).prev('label').addClass('moveUp');
+})
 
-/*if($('.form-field .input-text').val()){
-    $('.form-field .input-text .label').css(
-        {"transform": "translateY(-25px)"}
-    );
-}*/
+$('input').on('focusout', function() {
+    if (!$(this).val()) $(this).prev('label').removeClass('moveUp');
+})
+
