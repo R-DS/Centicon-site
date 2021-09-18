@@ -4,11 +4,14 @@
 #1c2834
 */
 
+
 section{
     margin-bottom: 60px;
 }
 /* navbar cs start*/
 .navbar{
+    padding-left: 13px;
+    padding-right: 13px;
 }
 .navbar-toggler{
     background-color: #d4af37;
@@ -22,6 +25,7 @@ section{
     font-family: Montserrat-Thin, serif;
     color: #d4af37 !important;
     font-size: x-large;
+    font-style: oblique;
 }
 .navbar{
     background-color: #1c2834 !important;
@@ -56,28 +60,30 @@ section{
 }
 /*nav bar css ends*/
 
-h1{
+h1, p{
     font-family: "Montserrat-Thin", serif;
 }
-
-p {
-    font-family: 'Montserrat, sans-serif', serif;  font-size: 0.9rem;  line-height: 1.8;
-    font-weight: 400;}
 
 .cnt-block {
     height: 39px;
 }
 
-.bg-info{
-    background-color: blueviolet;
+
+
+/* About us */
+
+#AboutUsId .container-fluid {
+    padding: 30px;
+    background-color: #f1efef;
 }
-
-
-#more {display: none;}
-
-
-
-
+#AboutUsId h4{
+    font-family: 'Montserrat, sans-serif', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#AboutUsId p{
+    font-size: larger;
+}
 
 
 /* Our Services */
@@ -221,7 +227,7 @@ p {
 
 /*Baabaqo*/
 
-.baabaqo .carousel-item{
+.testimonial .carousel-item{
     min-height: 62vh;
     background-position: center;
     background-size: cover;
@@ -229,7 +235,7 @@ p {
     z-index: 1;
 }
 
-.baabaqo .carousel-item:before{
+.testimonial .carousel-item:before{
     content: '';
     position: absolute;
     left: 0;
@@ -239,7 +245,7 @@ p {
     z-index: 1;
 }
 
-.baabaqo .carousel-item h2{
+.testimonial .carousel-item h2{
     font-family: 'Kaushan Script', cursive;
     font-size: 80px;
     color: red !important;
@@ -248,7 +254,7 @@ p {
     padding-top: 120px;
 }
 
-.baabaqo .carousel-item p{
+.testimonial .carousel-item p{
     font-family: "Montserrat-Thin", serif;
     font-size: 24px;
     margin: 0;
@@ -259,24 +265,24 @@ p {
     top: 50%;
     text-align: center;
 }
-.baabaqo .carousel-item.active h2{
+.testimonial .carousel-item.active h2{
     animation: fadeInLeft 0.5s ease forwards;
 }
-.baabaqo .carousel-item.active p{
+.testimonial .carousel-item.active p{
     animation: fadeInRight 0.5s ease forwards;
 }
-.baabaqo .carousel-controls{
+.testimonial .carousel-controls{
     position: absolute;
     left: 50%;
     bottom: 40px;
     z-index: 10;
     transform: translate(-50%);
 }
-.baabaqo .carousel-indicators{
+.testimonial .carousel-indicators{
     position: relative;
     margin: 0;
 }
-.baabaqo .carousel-indicators li{
+.testimonial .carousel-indicators li{
     width: 30px;
     height: 5px;
     margin: 0;
@@ -285,22 +291,22 @@ p {
     border: solid 2px transparent;
     transition: all 0.3s ease;
 }
-.baabaqo .carousel-control-next-icon,
-.baabaqo .carousel-control-prev-icon{
+.testimonial .carousel-control-next-icon,
+.testimonial .carousel-control-prev-icon{
     width: 30px;
 }
-.baabaqo .carousel-control-next{
+.testimonial .carousel-control-next{
     right: -90px;
 }
-.baabaqo .carousel-control-prev{
+.testimonial .carousel-control-prev{
     left: -90px;
 }
-.baabaqo .carousel-indicators li.active{
+.testimonial .carousel-indicators li.active{
     border-color: #fff;;
     transform: scale(1.2);
 }
-.baabaqo .carousel-control-next,
-.baabaqo .carousel-control-prev{
+.testimonial .carousel-control-next,
+.testimonial .carousel-control-prev{
     width: 60px;
     height: 60px;
     opacity: 1;
@@ -310,8 +316,8 @@ p {
     border-radius: 50%;
     transition: all 0.3s ease;
 }
-.baabaqo .carousel-control-next:hover,
-.baabaqo .carousel-control-prev:hover{
+.testimonial .carousel-control-next:hover,
+.testimonial .carousel-control-prev:hover{
     box-shadow: 0 0 10px #ffffff;
 }
 
@@ -431,6 +437,29 @@ p {
         text-align: center !important;
     }
 }
+
+
+
+
+/*
+form {
+    display: inline-block;
+}
+.field {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    padding-left: 5px;
+    transition: all 0.3s ease-in;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+.moveUp {
+    transform: translateY(-2px);
+}
+*/
 
 
 

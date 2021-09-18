@@ -1,10 +1,34 @@
 
-/*function closeMenu(){
-    document.querySelector('.navbar-collapse a').click(function(){
-        document.querySelector(".navbar-collapse").collapse('hide');
-    });
-}*/
+/***collapse navbar when menu button clicked*/
+//jquery
+$('.nav-link').on('click',function() {
+    $('.navbar-collapse').collapse('hide');
+});
 
+/***navbar javascript***/
+document.addEventListener("DOMContentLoaded", function(){
+
+    el_autohide = document.querySelector('.autohide');
+
+    navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop = navbar_height + 'px';
+
+    if(el_autohide){
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+            if(scroll_top < last_scroll_top) {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+            }
+            else {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+        });
+    }
+});
 
 function myFunction() {
     const dots = document.getElementById("dots");
@@ -40,46 +64,12 @@ items.forEach((el) => {
 });
 
 
-/*navbar javascript*/
-
-document.addEventListener("DOMContentLoaded", function(){
-
-    el_autohide = document.querySelector('.autohide');
-
-    // add padding-top to bady (if necessary)
-    navbar_height = document.querySelector('.navbar').offsetHeight;
-    document.body.style.paddingTop = navbar_height + 'px';
-
-    if(el_autohide){
-        var last_scroll_top = 0;
-        window.addEventListener('scroll', function() {
-            let scroll_top = window.scrollY;
-            if(scroll_top < last_scroll_top) {
-                el_autohide.classList.remove('scrolled-down');
-                el_autohide.classList.add('scrolled-up');
-            }
-            else {
-                el_autohide.classList.remove('scrolled-up');
-                el_autohide.classList.add('scrolled-down');
-            }
-            last_scroll_top = scroll_top;
-        });
-        // window.addEventListener
-    }
-    // if
-
-});
-
-
-// Navbar toggler collapse automatically after clicked
-
-//
 
 /* navbar js ends*/
 
 
 
-/*Home and Contact animation*/
+/***Home and Contact animation*/
 window.sr = ScrollReveal();
 sr.reveal('.Home', {duration: 3000, origin: 'top', distance: '40px'});
 /*sr.reveal('.contactleft', {
@@ -90,8 +80,8 @@ sr.reveal('.contactright', {
 });*/
 
 
-/*Scrolling smooth animation*/
-/*
+/***Scrolling smooth animation*/
+
 $(function () {
     // smooth scrolling
     $('a[href*="#"]:not([href="#"])').click(function (){
@@ -102,9 +92,17 @@ $(function () {
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 1000);
+                }, 900);
                 return false;
             }
         }
     });
-});*/
+});
+
+
+
+/*if($('.form-field .input-text').val()){
+    $('.form-field .input-text .label').css(
+        {"transform": "translateY(-25px)"}
+    );
+}*/
