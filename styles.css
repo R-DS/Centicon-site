@@ -379,7 +379,7 @@ label {
 
 @media screen and (max-width: 640px) {
     .contact2 h1 {
-        font-size: 45px !important;
+        font-size: 40px !important;
     }
     .contact2 .contact-form button {
         margin-left: calc((100% - 200px)/2);
