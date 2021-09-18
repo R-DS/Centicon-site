@@ -92,7 +92,7 @@ $(function () {
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 900);
+                }, 1);
                 return false;
             }
         }
