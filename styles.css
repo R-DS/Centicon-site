@@ -314,6 +314,7 @@ h1, p{
 
 .contact-form .input-text:focus {
     /*outline: none;*/
+    outline-color: #d69600;
 }
 
 label {
@@ -355,7 +356,7 @@ label {
 }
 
 .contact-form .input-text-message:focus {
-    outline-color: #d69600 !important;
+    outline-color: #d69600;
     border-color: #d69600;
 }
 
