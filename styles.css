@@ -72,9 +72,7 @@ h1, p{
 
 /* About us */
 
-#AboutUsId .container-fluid {
-    padding: 30px;
-    background-color: #f1efef;
+#AboutUsId .container {
 }
 #AboutUsId h4{
     font-family: 'Montserrat, sans-serif', serif;
