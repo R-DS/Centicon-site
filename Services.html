@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Centicon Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .container{
             margin-top: 10%;
@@ -152,8 +154,9 @@
             animation: move-animation 2s ease-in-out infinite;
         }
     </style>
+
 </head>
-<body>
+<body data-gr-c-s-loaded="true">
     <section class="testimonial">
         <div class="container">
             <div class="row">
@@ -187,6 +190,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="servicesId">
         <div class="container">
@@ -259,31 +263,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+    <!--Service2 script-->
     <script>
-            $('.team-slider').owlCarousel({
-                responsiveBaseElement: '.container',
-                loop: true, nav: false, autoplay: true,
-                autoplayHoverPause: true,
-                autoplayTimeout: 5000, smartSpeed: 450, margin: 20,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    991: {
-                        items: 3
-                    },
-                    1200: {
-                        items: 3
-                    },
-                    1900: {
-                        items: 4
-                    }
+        $('.team-slider').owlCarousel({
+            loop:true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 5000, smartSpeed: 450, margin: 20,
+            responsiveClass: true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav: false
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                },
+                1800: {
+                    items: 4
                 }
-            });
+            }
+        });
     </script>
 </body>
 </html>
