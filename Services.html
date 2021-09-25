@@ -154,11 +154,10 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid">
     <section class="testimonial">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="img/building-1.jpg" alt="|">
                         <div class="card-tex">
@@ -167,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="img/building-2.jpg" alt="|">
                         <div class="card-tex">
@@ -176,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="img/bathroom-1.jpg" alt="|">
                         <div class="card-tex">
@@ -262,37 +261,29 @@
 
     <script>
             $('.team-slider').owlCarousel({
-                responsiveBaseElement: 'body',
-                /*loop: true, nav: false,*/ autoplay: true,
+                responsiveBaseElement: '.container',
+                loop: true, nav: false, autoplay: true,
                 autoplayHoverPause: true,
                 autoplayTimeout: 5000, smartSpeed: 450, margin: 20,
                 responsiveClass: true,
                 responsive: {
                     0: {
-                        items: 1,
-                        nav: false
+                        items: 1
                     },
                     768: {
-                        items: 2,
-                        nav: false
+                        items: 2
                     },
                     991: {
-                        items: 3,
-                        nav: false
+                        items: 3
                     },
                     1200: {
-                        items: 3,
-                        nav: false
+                        items: 3
                     },
-                    1920: {
-                        items: 4,
-                        nav: false,
-                        loop: true
+                    1900: {
+                        items: 4
                     }
                 }
             });
     </script>
-
-    </div>
 </body>
 </html>
