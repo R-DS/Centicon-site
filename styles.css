@@ -96,8 +96,8 @@ h1, p{
     animation-timing-function: ease-in-out;
 }
 .maintxt h1{
-    padding-top: 35vh; color: #1c2834;
-    -webkit-text-stroke: 1px #d4af37;
+    padding-top: 35vh; color: white;
+    -webkit-text-stroke: 1px #1c2834;
 }
 @keyframes home-section {
     0%{
@@ -269,9 +269,9 @@ h1, p{
 }
 
 .testimonial .carousel-item h2{
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Montserrat-Thin", serif;
     font-size: 80px;
-    color: red !important;
+    color: #d69600 !important;
     opacity: 0;
     text-align: center;
     padding-top: 120px;
@@ -281,7 +281,7 @@ h1, p{
     font-family: "Montserrat-Thin", serif;
     font-size: 24px;
     margin: 0;
-    color: greenyellow;
+    color: #1c2834;
     opacity: 0;
     text-transform: uppercase;
     left: 50% !important;
@@ -313,6 +313,7 @@ h1, p{
     background-size: cover;
     border: solid 2px transparent;
     transition: all 0.3s ease;
+    background-color: #1c2834;
 }
 .testimonial .carousel-control-next-icon,
 .testimonial .carousel-control-prev-icon{
@@ -325,7 +326,7 @@ h1, p{
     left: -90px;
 }
 .testimonial .carousel-indicators li.active{
-    border-color: #fff;
+    border-color: #d69600;
     transform: scale(1.2);
 }
 .testimonial .carousel-control-next,
@@ -338,10 +339,11 @@ h1, p{
     transform: translateY(-50%);
     border-radius: 50%;
     transition: all 0.3s ease;
+    background-color: rgba(28, 40, 52, 0.1);
 }
 .testimonial .carousel-control-next:hover,
 .testimonial .carousel-control-prev:hover{
-    box-shadow: 0 0 10px #ffffff;
+    box-shadow: 0 0 10px #1c2834;
 }
 
 @keyframes fadeInLeft {
