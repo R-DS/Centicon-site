@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-function myFunction() {
+/*function myFunction() {
     const dots = document.getElementById("dots");
     const moreText = document.getElementById("more");
     const btnText = document.getElementById("myBtn");
@@ -44,7 +44,7 @@ function myFunction() {
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
     }
-}
+}*/
 
 
 let items = document.querySelectorAll('.abt')
@@ -108,3 +108,30 @@ $('input').on('focusout', function() {
     if (!$(this).val()) $(this).prev('label').removeClass('moveUp');
 })
 
+
+
+/*** Services section ***/
+$('.team-slider').owlCarousel({
+    loop:true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000, smartSpeed: 450, margin: 20,
+    responsiveClass: true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1,
+            nav: false,
+            height: 100
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1800: {
+            items: 4
+        }
+    }
+});

@@ -9,50 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .container{
-            margin-top: 10%;
-        }
-        .card{
-            position: relative;
-            overflow: hidden;
-        }
-        .card:before{
-            position: absolute;
-            content: "";
-            width: 100%; height: 220%;
-            /*background: rgba(235, 53, 131, 0.7);*/
-            background: rgba(28, 40, 52, 0.7);
-            top: -50%; left: -100%;
-            z-index: 1;
-            transform: rotate(25deg);
-            transform-origin: center top 0;
-            transition: .5s;
-        }
-        .card:hover:before{
-            left: 10%;
-        }
-        .card img{
-            width: 100%; height: auto;
-        }
-        .card-tex{
-            width: 100%;
-            padding: 0 20px;
-            position: absolute;
-            top: -100%;
-            color: #fff;
-            left: 0;
-            z-index: 2;
-            transition: 1.1s;
-        }
-        .card-tex h3{
-            font-family: Montserrat, sans-serif;
-        }
-        .card:hover .card-tex{
-            top: 80px;
-        }
 
-    </style>
 
     <!--Service section-->
     <style>
@@ -89,17 +46,6 @@
             cursor: pointer;
         }
 
-        /*.info-area h4{
-            font-weight: 600;
-        }
-        .info-area a{
-            display: inline-block;
-            margin: 25px 0 0;
-            background-color: #d69600;
-            color: #fff;
-            padding: 10px 35px;
-            border-radius: 4px;
-        }*/
         .info-area{
             width: 90%;
         }
@@ -157,39 +103,7 @@
 
 </head>
 <body data-gr-c-s-loaded="true">
-    <section class="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <img src="img/building-1.jpg" alt="|">
-                        <div class="card-tex">
-                            <h3>John Doe</h3>
-                            <h5>painter</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <img src="img/building-2.jpg" alt="|">
-                        <div class="card-tex">
-                            <h3>Lisa Ray</h3>
-                            <h5>Builder</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <img src="img/bathroom-1.jpg" alt="|">
-                        <div class="card-tex">
-                            <h3>John Doe</h3>
-                            <h5>Tiler</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
     <section id="servicesId">
@@ -276,7 +190,8 @@
             responsive:{
                 0:{
                     items:1,
-                    nav: false
+                    nav: false,
+                    height: 100
                 },
                 600:{
                     items:2
