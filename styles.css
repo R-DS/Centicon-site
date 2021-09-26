@@ -96,24 +96,24 @@ h1, p{
     animation-timing-function: ease-in-out;
 }
 .maintxt h1{
-    padding-top: 35vh; color: snow;
-    -webkit-text-stroke: 1px #1c2834;
+    padding-top: 35vh; color: #1c2834;
+    -webkit-text-stroke: 1px #d4af37;
 }
 @keyframes home-section {
     0%{
-        background-image: url("img/Stone-outdoor.jpg");
+        background-image: url("img/bathroom-3.jpg");
     }
     20%{
-        background-image: url("img/show.jpg");
+        background-image: url("img/simpolo.jpg");
     }
     40%{
-        background-image: url("img/website-1.jpg");
+        background-image: url("img/simpolo-2020193_1920.jpg");
     }
     60%{
-        background-image: url("img/website-2.jpg");
+        background-image: url("img/Stone-outdoor.jpg");
     }
     80%{
-        background-image: url("img/stone-1.jpg");
+        background-image: url("img/tiles-1478503_1920.jpg");
     }
     100%{
         background-image: url("img/bathroom-1.jpg");
