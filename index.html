@@ -205,35 +205,35 @@
 
 
 
-    <!--Contact version2-->
+    <!--Contact -->
     <section class="contact2" id="contact">
         <h1 class="title">Get in touch</h1>
         <div class="container">
-            <form class="form" action="" method="post" enctype="multipart/form-data">
+            <form id="contact-form-id" class="form" action="contact-form.php" method="post" enctype="multipart/form-data">
                 <div class="contact-form row">
                     <div class="form-field col-lg-6">
                         <label for="name" class="label">name</label>
-                        <input id="name" class="input-text" type="text" required>
+                        <input id="name" name="customer_name" class="input-text" type="text" required>
                     </div>
 
                     <div class="form-field col-lg-6">
                         <label for="email" class="label">email</label>
-                        <input id="email" class="input-text" type="email" required>
+                        <input id="email" name="customer_email" class="input-text" type="email" required>
                     </div>
 
                     <div class="form-field col-lg-6">
                         <label for="company" class="label">company name</label>
-                        <input id="company" class="input-text" type="text" required>
+                        <input id="company" name="customer_company" class="input-text" type="text" required>
                     </div>
 
                     <div class="form-field col-lg-6">
                         <label for="phone" class="label">contact number</label>
-                        <input id="phone" class="input-text" type="text" required>
+                        <input id="phone" name="customer_phone" class="input-text" type="text" required>
                     </div>
 
                     <div class="form-field-message col-lg-12">
                         <a for="message2" class="label-contact-message">message</a>
-                        <label for="message2"></label><textarea id="message2" class="input-text-message" type="text" rows="4"></textarea>
+                        <label for="message2"></label><textarea id="message2" name="customer_message" class="input-text-message" type="text" rows="4"></textarea>
                     </div>
 
                     <div class="form-field col-lg-12 flex-box">

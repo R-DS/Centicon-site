@@ -8,13 +8,13 @@ $('.nav-link').on('click',function() {
 /***navbar javascript***/
 document.addEventListener("DOMContentLoaded", function(){
 
-    el_autohide = document.querySelector('.autohide');
+    let el_autohide = document.querySelector('.autohide');
 
-    navbar_height = document.querySelector('.navbar').offsetHeight;
+    let navbar_height = document.querySelector('.navbar').offsetHeight;
     document.body.style.paddingTop = navbar_height + 'px';
 
     if(el_autohide){
-        var last_scroll_top = 0;
+        let last_scroll_top = 0;
         window.addEventListener('scroll', function() {
             let scroll_top = window.scrollY;
             if(scroll_top < last_scroll_top) {
@@ -30,29 +30,13 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-/*function myFunction() {
-    const dots = document.getElementById("dots");
-    const moreText = document.getElementById("more");
-    const btnText = document.getElementById("myBtn");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}*/
-
 
 let items = document.querySelectorAll('.abt')
 
 items.forEach((el) => {
     const minPerSlide = 3
     let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
+    for (let i=1; i<minPerSlide; i++) {
         if (!next) {
             // wrap carousel by using first child
             next = items[0]
@@ -87,7 +71,7 @@ $(function () {
     $('a[href*="#"]:not([href="#"])').click(function (){
         if(location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') &&
             location.hostname === this.hostname) {
-            var target = $(this.hash);
+            let target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
                 $('html, body').animate({
