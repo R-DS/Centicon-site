@@ -8,11 +8,7 @@
     $email_centicon = 'info@centicon.com.au';
     $email_subject = "New Customer Message"
 
-    $email_body = "Customer name: $customer_name.\n".
-                    "Customer email: $customer_email.\n".
-                        "Company: $customer_company.\n".
-                            "Customer phone: $customer_phone.\n\n".
-                                "Message: $customer_message.\n";
+    $email_body = "Customer name: $customer_name.\n"."Customer email: $customer_email.\n"."Company: $customer_company.\n"."Customer phone: $customer_phone.\n\n"."Message: $customer_message.\n";
 
     $to = "roah.egl@gmail.com";
     $headers = "From: $email_centicon \r\n";
