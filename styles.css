@@ -75,7 +75,8 @@ h1, p{
 /*Home Section*/
 .maintxt{
     height: 100vh; width: 100%; margin-top: -68px;
-    background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/tiling-1.jpg");
+    background-image: url("img/tiling-1.jpg");
+    filter: glow(20);
     opacity: 1;
     background-size: cover;
     background-position: center;
@@ -96,27 +97,28 @@ h1, p{
     animation-timing-function: ease-in-out;
 }
 .maintxt h1{
-    padding-top: 35vh; color: white;
-    -webkit-text-stroke: 1px #1c2834;
+    padding-top: 35vh; color: #1c2834;
+    -webkit-text-stroke: 1px #d4af37;
 }
+
 @keyframes home-section {
     0%{
-        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/bathroom-3.jpg");
+        background-image: url("img/bathroom-3.jpg");
     }
     20%{
-        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/simpolo.jpg");
+        background-image: url("img/simpolo.jpg");
     }
     40%{
-        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/simpolo-2020193_1920.jpg");
+        background-image: url("img/simpolo-2020193_1920.jpg");
     }
     60%{
-        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/Stone-outdoor.jpg");
+        background-image: url("img/Stone-outdoor.jpg");
     }
     80%{
-        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/tiles-1478503_1920.jpg");
+        background-image: url("img/tiles-1478503_1920.jpg");
     }
     100%{
-        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url("img/bathroom-1.jpg");
+        background-image: url("img/bathroom-1.jpg");
     }
 }
 

@@ -5,7 +5,7 @@
     $customer_phone = $_POST['customer_phone'];
     $customer_message = $_POST['customer_message'];
 
-    $email_centicon = 'services@centicon.com.au';
+    $email_centicon = 'services.centicon@gmail.com';
     $email_subject = "New Customer Message"
 
     $email_body = "Customer name: $customer_name.\n".
