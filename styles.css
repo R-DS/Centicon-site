@@ -155,6 +155,9 @@ h1, p{
 #AboutUsId p{
     font-size: larger;
 }
+#aboutUsImg{
+    width: 300px !important;
+}
 
 
 /* Services section*/
