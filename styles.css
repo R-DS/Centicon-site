@@ -73,10 +73,11 @@ h1, p{
 
 
 /*Home Section*/
-.maintxt{
+.background1{
     height: 100vh; width: 100%; margin-top: -68px;
+    animation-name: home-section;
     background-image: url("img/tiling-1.jpg");
-    filter: glow(20);
+    filter: brightness(50%);
     opacity: 1;
     background-size: cover;
     background-position: center;
@@ -88,7 +89,6 @@ h1, p{
     -moz-background-size: cover;
     -o-background-size: cover;
 
-    animation-name: home-section;
     animation-direction: alternate-reverse;
     animation-duration: 30s;
     animation-fill-mode: forwards;
@@ -96,9 +96,15 @@ h1, p{
     animation-play-state: running;
     animation-timing-function: ease-in-out;
 }
-.maintxt h1{
-    padding-top: 35vh; color: #1c2834;
-    -webkit-text-stroke: 1px #d4af37;
+.home-content{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#slogan{
+    color: white;
 }
 
 @keyframes home-section {
@@ -130,11 +136,10 @@ h1, p{
     background-image: linear-gradient(0.25turn, #d69600, #ffdf7a, #d69600);
     border-radius: 30px;
     width: 180px;
-    margin-top: 180px;
 }
 
 #get-quote:hover{
-    box-shadow: 0 0 15px #1c2834;
+    box-shadow: 0 0 15px #d4af37;
     color: black;
 }
 
@@ -142,9 +147,6 @@ h1, p{
 
 
 /* About us */
-
-#AboutUsId .container {
-}
 #AboutUsId h4{
     font-family: 'Montserrat, sans-serif', serif;
     font-weight: bold;
@@ -488,9 +490,6 @@ label {
         margin-left: calc((100% - 200px)/2);
     }
 
-    #get-quote{
-        margin-top: 90px;
-    }
     #servicesId .card{
         margin-left: -20px;
         margin-right: -20px;
