@@ -253,7 +253,6 @@ h1, p{
 
 
 /* Testimonial */
-
 .testimonial .carousel-item{
     min-height: 80vh;
     background-position: center;
@@ -482,7 +481,7 @@ label {
     text-decoration: none;
 }
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) {
     .contact2 h1 {
         font-size: 38px !important;
     }
