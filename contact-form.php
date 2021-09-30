@@ -57,12 +57,16 @@
 
         header("Location: index.html"); exit;
 
-        if ($resEmail1 && $resEmail2){
-            $success = "Your Message was sent successfully!";
+        if ($resEmail1){
+            echo '<script type="text/javascript">Your Message was sent successfully!</script>';
+            header("Location: index.html"); exit;
         } else {
-            $failed = "Sorry! Message was not sent, Please try again.";
+            echo '<script type="text/javascript"> Alert! Message was not sent, Please try again. </script>';
+            header("Location: index.html"); exit;
         }
+        header("Location: index.html"); exit;
     }
+    header("Location: index.html"); exit;
 ?>
 
 
