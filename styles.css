@@ -90,7 +90,7 @@ h1, p{
     -o-background-size: cover;
 
     animation-direction: alternate-reverse;
-    animation-duration: 30s;
+    animation-duration: 60s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -374,9 +374,17 @@ h1, p{
 }
 
 
+/* Why Chose Us*/
+#whyChoseUsId p {
+    font-size: larger;
+}
 
 
-/*Contact version 2*/
+
+
+
+
+    /*Contact */
 .contact2 {
     max-width: 800px;
     margin: 50px auto;
@@ -495,6 +503,10 @@ label {
     #servicesId .card{
         margin-left: -20px;
         margin-right: -20px;
+    }
+    
+    #whyChoseUsId h1{
+        text-align: center;
     }
 }
 
