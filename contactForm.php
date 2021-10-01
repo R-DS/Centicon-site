@@ -22,7 +22,7 @@
 // enable smtp authentication
     $mail->AMTPAuth = "true";
 // set type of encryption (ssl/tls)
-    $mail->SMTPSecure = "ssl";
+    $mail->SMTPSecure = "tls";
 // set prt to connect smtp
     $mail->Port = "587";
 // set email username
