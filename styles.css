@@ -508,6 +508,11 @@ label {
     #whyChoseUsId h1{
         text-align: center !important;
     }
+
+    #AboutUsId p,
+    #whyChoseUsId p {
+        font-size: large !important;
+    }
 }
 
 
