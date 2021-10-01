@@ -4,7 +4,6 @@
     require 'phpmailer/include/PHPMailer.php';
     require 'phpmailer/include/SMTP.php';
     require 'phpmailer/include/Exception.php';
-    require 'index.html';
 
 // Define name spaces
     use PHPMailer\PHPMailer\PHPMailer;
