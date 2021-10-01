@@ -376,7 +376,7 @@ h1, p{
 
 /* Why Chose Us*/
 #whyChoseUsId p {
-    font-size: larger;
+    font-size: larger !important;
 }
 
 
