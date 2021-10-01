@@ -1,8 +1,10 @@
 <?php
+
 // include required phpmailer files
     require 'phpmailer/include/PHPMailer.php';
     require 'phpmailer/include/SMTP.php';
     require 'phpmailer/include/Exception.php';
+    require 'index.html';
     header(Location: 'index.html');
 
 // Define name spaces
@@ -15,32 +17,49 @@
 
 // Set mailer to use smtp
     mail->isSMTP();
+    $mail->SMTPDebug = 2;
+
 // define smtp host
-    $mail->Host = "smtp.gmail.com";
+    $mail->Host = "smtp.hostinger.com";
 // enable smtp authentication
     $mail->AMTPAuth = "true";
 // set type of encryption (ssl/tls)
-    $mail->SMTPSecure = "tls";
+    $mail->SMTPSecure = "ssl";
 // set prt to connect smtp
     $mail->Port = "587";
 // set email username
-    $mail->Username = '';
+    $mail->Username = 'services@centicon.com.au';
 // set email password
-    $mail->Password = "";
+    $mail->Password = '';
 // set email subject
     $mail->Subject = "Test email using PHPMailer";
 //Set sender email
-    $mail->setFrom("");
+    $mail->setFrom('services@centicon.com.au', 'Centicon');
 // Email body
-    $mail->Body = "This is plain text email body";
+    //$mail->Body = "This is plain text email body";
 // Add recipient
-    $mail->addAddress("");
-// Finally send email
-    if ($mail->Send()){
-        echo "Email sent successfully";
-    } else {
-        echo "Error.! Please try again";
-    }
-// Closing smtp connection
+    $mail->addAddress('roah.egl@gmail.com', 'Mr Roah');
+
+    if ($mail->addReplyTo($_POST['customer_email'], $_POST['customer_name'])) {
+            $mail->Subject = 'PHPMailer contact form';
+            $mail->isHTML(false);
+            $mail->Body = <<<EOT
+    Email: {$_POST['customer_email']}
+    Name: {$_POST['customer_name']}
+    Message: {$_POST['customer_message']}
+    EOT;
+            if (!$mail->send()) {
+                $msg = 'Sorry, something went wrong. Please try again later.';
+            } else {
+                $msg = 'Message sent! Thanks for contacting us.';
+            }
+        } else {
+            $msg = 'Share it with us!';
+        }
+
+    // Finally send email
+
+    // Closing smtp connection
     $mail->smtpClose();
+
 ?>
